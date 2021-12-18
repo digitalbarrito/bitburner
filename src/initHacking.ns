@@ -1,4 +1,4 @@
-const baseUrl = 'https://raw.githubusercontent.com/SoullessReaper/bitburner-1/master/src/'
+const baseUrl = 'https://raw.githubusercontent.com/PatomanGit/bitburner-1/master/src/'
 const filesToDownload = [
   'common.ns',
   'mainHack.ns',
