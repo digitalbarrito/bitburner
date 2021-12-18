@@ -10,7 +10,7 @@ The script has been modified to be able to start on 8 GB (the default starting R
 
 The script can be slow to get going, but it'll get there eventually. Getting access to more port hackers will improve the performance.
 
-## Instalation
+## Installation
 
 1. Create a new script called `start.ns` by issuing the following command: `nano start.ns`. Make sure you're on your home server if you're not (you can quickly go home by running `home` in the console).
 2. Paste the following content:
