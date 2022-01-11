@@ -1,16 +1,16 @@
 const baseUrl = 'https://raw.githubusercontent.com/digitalbarrito/bitburner/master/src/'
 const filesToDownload = [
-  'common.ns',
-  'mainHack.ns',
-  'spider.ns',
-  'grow.ns',
-  'hack.ns',
-  'weaken.ns',
-  'playerServers.ns',
-  'killAll.ns',
-  'runHacking.ns',
-  'find.ns',
-  'stockMarketer4S.ns',
+  'common.js',
+  'mainHack.js',
+  'spider.js',
+  'grow.js',
+  'hack.js',
+  'weaken.js',
+  'playerServers.js',
+  'killAll.js',
+  'runHacking.js',
+  'find.js',
+  'stockMarketer4S.js',
 ]
 const valuesToRemove = ['BB_SERVER_MAP']
 
@@ -23,7 +23,7 @@ function localeHHMMSS(ms = 0) {
 }
 
 export async function main(ns) {
-  ns.tprint(`[${localeHHMMSS()}] Starting initHacking.ns`)
+  ns.tprint(`[${localeHHMMSS()}] Starting initHacking.js`)
 
   let hostname = ns.getHostname()
 
@@ -43,6 +43,6 @@ export async function main(ns) {
 
   valuesToRemove.map((value) => localStorage.removeItem(value))
 
-  ns.tprint(`[${localeHHMMSS()}] Spawning killAll.ns`)
-  ns.spawn('killAll.ns', 1, 'runHacking.ns')
+  ns.tprint(`[${localeHHMMSS()}] Spawning killAll.js`)
+  ns.spawn('killAll.js', 1, 'runHacking.js')
 }
