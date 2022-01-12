@@ -16,15 +16,19 @@ The script can be slow to get going, but it'll get there eventually. Getting acc
 2. Paste the following content:
 
 ```javascript
+ns.tprint(`[${localeHHMMSS()}] Starting start.js`)
+
 export async function main(ns) {
   if (ns.getHostname() !== "home") {
     throw new Exception("Run the script from home");
   }
 
   await ns.wget(
+    ns.tprint(`[${localeHHMMSS()}] Trying to download initHacking.js`)
     `https://raw.githubusercontent.com/digitalbarrito/bitburner/master/src/initHacking.js?ts=${new Date().getTime()}`,
     "initHacking.js"
   );
+  ns.tprint(`[${localeHHMMSS()}] Starting initHacking.js`)
   ns.spawn("initHacking.js", 1);
 }
 ```
